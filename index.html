@@ -1,0 +1,319 @@
+<!DOCTYPE HTML>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/splash/splash-icon.png">
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen.png" 			media="screen and (max-device-width: 320px)" />  
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen%402x.png" 		media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
+<link rel="apple-touch-startup-image" sizes="640x1096" href="images/splash/splash-screen%403x.png" />
+<link rel="apple-touch-startup-image" sizes="1024x748" href="images/splash/splash-screen-ipad-landscape.html" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : landscape)" />
+<link rel="apple-touch-startup-image" sizes="768x1004" href="images/splash/splash-screen-ipad-portrait.png" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : portrait)" />
+<link rel="apple-touch-startup-image" sizes="1536x2008" href="images/splash/splash-screen-ipad-portrait-retina.png"   media="(device-width: 768px)	and (orientation: portrait)	and (-webkit-device-pixel-ratio: 2)"/>
+<link rel="apple-touch-startup-image" sizes="1496x2048" href="images/splash/splash-screen-ipad-landscape-retina.png"   media="(device-width: 768px)	and (orientation: landscape)	and (-webkit-device-pixel-ratio: 2)"/>
+<title>Home</title>
+<link href="styles/style.css"     		 rel="stylesheet" type="text/css">
+<link href="styles/framework.css" 		 rel="stylesheet" type="text/css">
+<link href="styles/menu.css" 		 	 rel="stylesheet" type="text/css">
+<link href="styles/owl.theme.css" 		 rel="stylesheet" type="text/css">
+<link href="styles/swipebox.css"		 rel="stylesheet" type="text/css">
+<link href="styles/font-awesome.css"	 rel="stylesheet" type="text/css">
+<link href="styles/animate.css"			 rel="stylesheet" type="text/css">
+<script type="text/javascript" src="scripts/glovebox.js"></script>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+
+<script>
+	jQuery(document).ready(function()
+	{
+		jQuery.post('http://generic.webbyinfotech.in/projs.php',
+			{},
+			function(data)
+			{
+				//alert(data);
+				jQuery("ul.gallery").html(data);						
+			}
+		);
+	
+	});
+</script>
+</head>
+<body>
+
+<div id="preloader">
+	<div id="status">
+    	<p class="center-text">
+			Loading the content...
+            <em>Loading depends on your connection speed!</em>
+        </p>
+    </div>
+</div>
+
+<div class="all-elements">
+<div id="perspective" class="perspective effect-airbnb"><!--this houses the entire page, and creates the effect-->
+    <!--header -->
+	<div class="header">
+        <a href="#" id="showMenu"><i class="fa fa-navicon"></i></a>
+        <a href="#" id="pageLogo"><!--<img src="images/logo.png" alt="img"> --><h1 style="text-align:center; //margin-top:6%;">Generic</h1></a>
+        <a href="#" id="openMail"><i class="fa fa-envelope-o"></i></a>
+    </div> 	
+	<!--header -->
+	<!--menu -->
+    <div class="outer-nav">
+        <div class="inner-nav">
+            <div class="nav-item">
+                <a href="index.html" class="active-item">
+                    <i class="nav-icon fa fa-home"></i>
+                    Home
+                </a>
+            </div>
+			<div class="nav-item">
+                <a href="contact.html">
+                    <i class="nav-icon fa fa-envelope"></i>
+                    About Us
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="contact.html">
+                    <i class="nav-icon fa fa-envelope"></i>
+                    Contact Us
+                </a>
+            </div>
+			<div class="nav-item">
+                <a href="contact.html">
+                    <i class="nav-icon fa fa-envelope"></i>
+                    Serives
+                </a>
+            </div>
+			<div class="nav-item">
+                <a href="#" class="deploy-nav-sub-item">
+                    <i class="nav-icon fa fa-cog"></i>
+                    User
+                </a>
+                <div class="nav-sub-item">
+                    <a href="features-type.html">Profile</a>
+                    <a href="features-jquery.html">Projects</a>
+					<a href="features-jquery.html">Project Status</a>
+					<a href="features-jquery.html">Project Queries</a>
+                </div>
+            </div>
+            
+            <div class="nav-item">
+                <a href="portfolio-wide.html">
+                    <i class="nav-icon fa fa-picture-o"></i>
+                    Our Work
+                </a>                
+            </div>
+            
+        </div>
+    </div>
+	<!--menu -->
+	
+    <div class="perspective_container"><!--the "moving to the left" content box-->
+        <div class="wrapper"><!-- wrapper needed for scroll -->
+         	<div class="header-clear"><i class="fa fa-times"></i></div>
+            <div class="slider-container full-bottom">
+                <div class="homepage-slider" data-snap-ignore="true">                
+                    
+					<div>
+                        <div class="overlay"></div>
+                        <div class="homepage-slider-caption">
+                            <h3>Let's get A New Increadible Creation</h3>                            
+                        </div>
+                        <img src="http://generic.webbyinfotech.in/images/slider/bg1.jpg" class="responsive-image" alt="img">
+                    </div>	
+                    
+					<div>
+                        <div class="overlay"></div>
+                        <div class="homepage-slider-caption">
+                            <h3>Creativity in Blood</h3>
+
+                        </div>
+                        <img src="http://generic.webbyinfotech.in/images/slider/bg2.jpg" class="responsive-image" alt="img">
+                    </div>
+					
+					<div>
+                        <div class="overlay"></div>
+                        <div class="homepage-slider-caption">
+                            <h3>Build dream Into Reality</h3>
+
+                        </div>
+                        <img src="http://generic.webbyinfotech.in/images/slider/bg3.jpg" class="responsive-image" alt="img">
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+            	<div class="page-heading container">
+                    <p>
+						Welcome to Generic Project management! The next generation web & mobile project made to run like native applications!
+                    </p>
+                </div>    
+                <div class="decoration"></div>        
+            </div>
+            <div class="content-strip">
+                <h4>Services</h4>
+                <p>The things we love to do, for you!</p>
+                <i class="fa fa-cogs"></i>
+                <div class="overlay"></div>
+                <img src="images/pictures/5w.jpg" alt="img">
+            </div>
+            <div class="content">
+            	<div class="decoration"></div>
+                <div class="container no-bottom">
+                    <div class="one-half-responsive">
+                        <p class="thumb-left no-bottom">
+						<table>
+							<tr>
+								<td><i class="fa fa-globe fa-6x" style="color:#000; margin-right:15px;"></i></td>
+								<td><strong>Web Services & Development</strong>
+                            <em><br>We Provide professional website Design & Development Services. <br> Experts in HTML5 CSS3 </em></td>
+							</tr>
+						</table>
+                        </p>
+
+                    </div>
+ 
+                    <div class="one-half-responsive last-column">        
+                        <p class="thumb-right no-bottom">
+						<table>
+							<tr>
+								<td><strong>Mobile Application</strong>
+                            <em><br>With Specialized and Experience Developers for all type Android and iPhone Application we provide attractive and smart Mobile Applications for your business to expand.
+</em></td>
+							<td><i class="fa fa-mobile-phone fa-6x" style="color:#000; margin-right:15px;"></i></td>
+							</tr>
+						</table>
+                        </p>
+
+                    </div>
+					<div class="one-half-responsive">
+                        <p class="thumb-left no-bottom">
+						<table>
+							<tr>
+								<td><i class="fa fa-search fa-6x" style="color:#000; margin-right:15px;"></i></td>
+								<td><strong>SEO</strong>
+                            <em><br>Search Engine Optimization (SEO) is one of the must required Service to grow your Business online market and our Best SEO Experts deliver high quality Professional SEO Services.</em></td>
+							</tr>
+						</table>
+                        </p>
+
+                    </div>
+ 
+                    <div class="one-half-responsive last-column">        
+                        <p class="thumb-right no-bottom">
+						<table>
+							<tr>
+								<td><strong>CMS</strong>
+                            <em><br>A website built on static HTML can turn out to be business liability and an inefficient way to maintain your online presence. Start using a dynamic CMS powered site.<br> Experts in WORDPRESS JOOMLA MAGENTO</em></td>
+							<td><i class="fa fa-pencil fa-6x" style="color:#000; margin-right:15px;"></i></td>
+							</tr>
+						</table>
+                        </p>
+
+                    </div>
+                </div>
+			</div>
+            <div class="content-strip">
+                <h4>The Staff</h4>
+                <p>Meet our awesome staff!</p>
+                <i class="fa fa-user"></i>
+                <div class="overlay"></div>
+                <img src="images/pictures/6w.jpg" alt="img">
+            </div>         
+            <div class="content">
+                <div class="decoration"></div>
+                <div class="container">
+                    <a href="#" class="next-staff"></a>
+                    <a href="#" class="prev-staff"></a>
+                    <div class="staff-slider">
+                        <div>
+                            <div class="staff-item">
+                                <img src="images/pictures/1s.jpg" alt="img">
+                                <h4>Kania Shivani</h4>
+                                <em>Web Designer</em>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="staff-item">
+                                <img src="images/pictures/2s.jpg" alt="img">
+                                <h4>Dabhi Dipika</h4>
+                                <em>Front End Developer</em>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="staff-item">
+                                <img src="images/pictures/3s.jpg" alt="img">
+                                <h4>Patil Vilas</h4>
+                                <em>Business Manager</em>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="staff-item">
+                                <img src="images/pictures/4s.jpg" alt="img">
+                                <h4>Meraj Ghaniwala</h4>
+                                <em>CEO</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="decoration"></div>
+            </div>
+            
+			<div class="content-strip">
+                <h4>Recent works</h4>
+                <p>On a touch image gallery</p>
+                <i class="fa fa-picture-o"></i>
+                <div class="overlay"></div>
+                <img src="images/pictures/5w.jpg" alt="img">
+            </div>
+            
+            <div class="content">
+                <div class="decoration"></div>
+                <div class="container">
+                    <p class="no-bottom">
+                        A touch image gallery is here to complete the template, 
+                        you can add titles, and text, or simply leave the thumbnails 
+                        there with no text around them! Nothing complicated, 
+                        just a copy paste!
+                    </p>
+                </div>         
+    
+                <ul class="gallery">
+                    
+					<!--<li>
+                        <a class="swipebox" href="images/pictures/1.jpg" title="An image caption!">
+                        <img src="images/pictures/1s.jpg" alt="img" />
+                        <br>
+                        Grass near the ocean
+                        </a>
+                    </li> -->
+                    
+                </ul>   
+                <div class="decoration"></div>        
+            </div>
+            <div class="footer-section">
+                <p class="footer-text">
+                    Copyright 2014.<br>
+                    All rights reserved.
+                </p>
+                <div class="footer-icons">
+                    <a href="#" class="footer-facebook-icon"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="footer-google-icon"><i class="fa fa-google-plus"></i></a>
+                    <a href="#" class="footer-twitter-icon"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="footer-up-icon"><i class="fa fa-angle-up"></i></a>
+                </div>
+            </div>
+        
+        </div><!-- wrapper -->
+    </div><!-- /perspective container -->
+</div><!-- /perspective -->
+
+</div>
+
+<script type="text/javascript" src="scripts/menu.js"></script>
+<script type="text/javascript" src="scripts/jqueryui.js"></script>
+<script type="text/javascript" src="scripts/framework.plugins.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>
+</html>
